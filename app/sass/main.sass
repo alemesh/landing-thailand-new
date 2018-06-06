@@ -57,4 +57,338 @@ body
 	background-color: $accent
 	color: #fff
 
+
+//===================================================
+
+img
+	max-width: 100%
+	height: auto
+
+h1, h2, h3, h4, p, span
+	margin: 0 auto
+	padding: 0 auto
+	text-decoration: none
+	font-weight: normal
+
+ul
+	margin: 0 auto
+	padding: 0
+
+.main-holder
+	overflow: hidden
+	max-width: 1300px
+	margin: 0 auto
+	padding: 0 15px
+	position: relative
+
+//===================================================
+
+header
+	direction: rtl
+	position: relative
+	background-size: cover
+	//background-repeat: no-repeat
+	background-position: left
+	width: 100%
+	min-height: 879px
+	.background-holder
+		//direction: rtl
+		background-image: url(../img/background-holder-header.png)
+		background-size: cover
+		width: 1082px
+		height: 89px
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-bottom: 150px
+	.logo
+		margin-right: -200px
+	.header-text
+		display: flex
+		justify-content: right
+		.title-section
+			width: 50%
+			font-family: "FbSpoiler-Bold"
+			color: #00003c
+		h1
+			font-size: 75px
+			line-height: .9
+			margin-bottom: 20px
+		p
+			font-size: 46px
+			line-height: 1
+
+	.items-section
+		margin-top: 90px
+		padding: 0 30px
+	.items
+		display: flex
+		justify-content: center
+		align-items: center
+		margin: 0 -30px
+	.item
+		list-style: none
+		width: 20%
+		padding: 0 30px
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		.wrap-img
+			display: flex
+			justify-content: center
+			align-items: center
+			height: 180px
+			width: 80%
+		img
+			//height: 100%
+		.description
+			background: #00bac6
+			text-align: center
+			width: 100%
+			min-height: 70px
+			border-radius: 45px
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-direction: column
+			text-decoration: none
+			color: white
+			span
+				line-height: 1
+				display: block
+			.open-sans
+				font-family: "OpenSans-Bold"
+				font-size: 20px
+			.fb-spoiler
+				font-family: "FbSpoiler-Bold"
+				font-size: 25px
+
+
+.form-section
+	background: #00003c
+	min-height: 155px
+	//h3
+	//	direction: rtl
+	//	text-align: center
+	//	font-family: "FbSpoiler-Bold"
+	//	font-size: 24px
+	//	padding-top: 15px
+	//	margin: 0 0 5px
+	//	color: white
+	//	font-weight: bold
+	//	line-height: 1.4
+	.main-holder
+		display: flex
+		justify-content: center
+		align-items: center
+
+.form-hold
+	z-index: 2222222
+	//background: #f8be20
+	padding: 15px
+	min-height: 130px
+	width: 100%
+	position: relative
+	//border-radius: 25px 25px 25px 0
+	//background-color: rgb(245, 128, 38)
+	//opacity: .75
+	input, textarea
+		&::placeholder
+			color: #b9b9b9
+
+	h3
+		direction: rtl
+		text-align: center
+		font-family: "FbSpoiler-Bold"
+		font-size: 24px
+		margin: 0 0 25px 185px
+		color: white
+		font-weight: bold
+		line-height: 1.4
+
+	.form
+		direction: rtl
+		max-width: 930px
+		margin: 0 auto
+		position: relative
+		transition: opacity 0.2s ease-in-out
+
+	.form-row-wrap
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -8px
+
+	.form-row
+		width: 23%
+		padding: 0 8px
+
+
+
+	.form-control
+		padding: 10px
+		direction: rtl
+		display: block
+		width: 100%
+		height: 50px
+		border: none
+		border-radius: 25px
+		outline: none
+		font-size: 24px
+		font-family: "FbSpoiler-Regular"
+		line-height: 1.2
+		text-decoration: none
+		transition: all .5s ease
+		color: rgb(186, 186, 186)
+
+
+
+		&:hover
+			//background-color: #dad8d2
+			border: 1px solid rgb(89, 47, 20)
+			text-decoration: none
+			color: #111
+	.wrap-btn
+		width: 31%
+	.wrap-btn
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			border: none
+			outline: 0
+			top: 50%
+			left: 9%
+			width: 11px
+			height: 11px
+			border-left: 2px solid white
+			border-top: 2px solid white
+			//z-index: 99999
+			transform: translateY(-50%) rotate(-45deg)
+			z-index: 99999
+
+	.btn
+		background: #00bac6
+		font-family: "FbSpoiler-Bold"
+		color: white
+		text-align: center
+		height: 50px
+		border: none
+		border-radius: 35px
+		outline: none
+		display: block
+		width: 100%
+		font-size: 26px
+		text-decoration: none
+		transition: all .5s ease
+		&:hover
+			background-color: #0b9aa3
+			text-decoration: none
+			box-shadow: 1.414px 1.414px 50px 0px rgba(77, 77, 77, 0.3)
+
+
+.third-section
+	background: white
+	.regular-text-section
+		padding-top: 110px
+		direction: rtl
+		text-align: center
+		font-family: "FbSpoiler-Regular"
+		font-size: 26px
+		line-height: 1.1
+		color: #00003c
+	.bold-text-section
+		margin-top: 45px
+		direction: rtl
+		text-align: center
+		font-family: "FbSpoiler-Bold"
+		line-height: 1
+		color: #00003c
+		font-size: 36px
+	.button-section
+		margin-top: 45px
+		direction: rtl
+		text-align: center
+		font-family: "FbSpoiler-Bold"
+		font-size: 30px
+		padding-bottom: 100px
+		a
+			text-decoration: none
+			color: white
+			background: #00bac6
+			padding: 10px 15px
+			border-radius: 25px
+
+
+.fourth-section
+	background-image: url(../img/background-forurth-section.png)
+	background-size: cover
+	width: 100%
+	min-height: 245px
+	background-position: center
+	padding: 35px 0
+	.main-holder
+		max-width: 900px
+	.items
+		direction: rtl
+		display: flex
+		justify-content: center
+		align-items: center
+		margin: 0 -40px
+		flex-wrap: wrap
+	.item
+		list-style: none
+		padding: 0 40px
+		width: 25%
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		.wrap-img
+			width: 130px
+			height: 130px
+			display: flex
+			justify-content: center
+			align-items: center
+			background: white
+			border-radius: 50%
+			margin-bottom: 20px
+		p
+			font-family: "FbSpoiler-Bold"
+			font-size: 24px
+			line-height: 1.2
+			color: white
+
+
+footer
+	direction: rtl
+	background: #00003c
+	color: white
+	padding: 10px 0 15px
+	.bold-text-section
+		font-family: "FbSpoiler-Bold"
+		font-size: 23px
+		line-height: 1.2
+	.regular-text-section
+		font-family: "FbSpoiler-Regular"
+		font-size: 22px
+		line-height: 1.2
+	a
+		text-decoration: none
+		color: white
+		&:hover
+			text-decoration: none
+			color: white
+
+
+
+
+
+
+
+
+
+
+
+
 @import "media" // Всегда в конце

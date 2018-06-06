@@ -30,22 +30,155 @@
 
 <body>
 
-	<div class="container">
-
-		<div class="row">
-
-			<div class="col-sm-8 col-sm-offset-2">
-				
-				<img class="img-responsive" src="img/preview.jpg" alt="Start HTML5 Template">
-				<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Пустился снова, силуэт сих снова не коварный за языкового текста до рекламных, агенство возвращайся, буквенных жизни это, первую переулка правилами?</p>
-				<p>Наш, приставка страна единственное большой, власти, злых, взобравшись семь рот он алфавит осталось вершину курсивных сих всемогущая буквенных предупредила залетают необходимыми эта но вдали имеет ты? Предупреждал повстречался, но которое!</p>
-				<p>Злых, знаках свою. Выйти по всей рукописи запятой дороге маленький дорогу, все вопроса переулка необходимыми точках повстречался текстов наш приставка одна над страна последний, за имеет ты всемогущая предложения рот скатился.</p>
-
-			</div>
-			
+<header style="background-image: url(img/background-header.png)">
+	<div class="background-holder">
+		<div class="logo">
+			<a href="/">
+				<img src="img/logo-header.png" alt="logo">
+			</a>
 		</div>
-
 	</div>
+	<div class="main-holder">
+		<div class="header-text">
+			<div class="title-section">
+				<h1>מבצע מיוחד לנוסעי<br>
+					אל על לתאילנד</h1>
+				<p>בחרו הטבה מפנקת מבין</p>
+				<p>5 הטבות מיוחדות לבחירתכם</p>
+			</div>
+		</div>
+	</div>
+	<div class="items-section">
+		<ul class="items">
+			<li class="item">
+				<div class="wrap-img">
+					<img src="img/logo-item-2.png" alt="logo-item">
+				</div>
+				<a href="https://www.lametayel-thailand.com/" target="_blank" class="description">
+					<span class="fb-spoiler">ארוחה חינם ברשת</span>
+					<span class="fb-spoiler">מסעדות המרכז למטייל</span>
+				</a>
+			</li>
+			<li class="item">
+				<div class="wrap-img">
+					<img src="img/logo-item-1.png" alt="logo-item">
+				</div>
+				<a href="http://www.sealifebangkok.com/en/" target="_blank" class="description">
+					<span class="open-sans">Sea life</span>
+					<span class="open-sans">Ocean World </span>
+				</a>
+			</li>
+			<li class="item">
+				<div class="wrap-img">
+					<img src="img/logo-item-5.png" alt="logo-item">
+				</div>
+				<a href="https://www.madametussauds.com/bangkok/en/" target="_blank" class="description">
+					<span class="open-sans">Madame Tussauds</span>
+					<span class="open-sans">Bangkok</span>
+				</a>
+			</li>
+			<li class="item">
+				<div class="wrap-img">
+					<img src="img/logo-item-4.png" alt="logo-item">
+				</div>
+				<a href="https://www.siamparkcity.com/en/main.php" target="_blank" class="description">
+					<span class="open-sans">Siam Park City</span>
+					<span class="fb-spoiler">+ ארוחת צהריים</span>
+				</a>
+			</li>
+			<li class="item">
+				<div class="wrap-img">
+					<img src="img/logo-item-3.png" alt="logo-item">
+				</div>
+				<a href="http://www.dreamworld.co.th/panoramic/" target="_blank" class="description">
+					<span class="open-sans">Dream World</span>
+					<span class="fb-spoiler">+ ארוחת צהריים</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</header>
+<div class="form-section" id="form-scrol">
+	<!--<h3>למימוש ההטבה ופרטים נוספים, השאירו פרטים וניצור אתכם קשר בהקדם</h3>-->
+	<div class="main-holder">
+
+		<div class="form-hold">
+			<h3>למימוש ההטבה ופרטים נוספים, השאירו פרטים וניצור אתכם קשר בהקדם</h3>
+			<form action="form_processing.php" class="form form-validation" method="post">
+				<div class="form-row-wrap">
+					<div class="form-row">
+						<input name="name" class="form-control" required data-required="true" type="text" pattern="^[A-Zא-תa-z ]{1,50}$"  placeholder="*שם מלא">
+					</div>
+					<div class="form-row">
+						<input name="tel" class="form-control" required data-required="true" type="text" placeholder="*נייד" pattern="(((02)|(03)|(04)|(08)|(09)){1}[\d]{7,8})|(((071)|(072)|(073)|(074)|(076)|(077)|(078)|(079)|(050)|(051)|(052)|(053)|(054)|(055)|(056)|(058)|(059)){1}[\d]{6,7})" title="International, state or local telephone number">
+					</div>
+					<div class="form-row">
+						<input name="email" class="form-control" type="email" placeholder="מייל">
+					</div>
+					<div class="form-row wrap-btn">
+						<input type="submit" class="btn" value="למימוש ההטבה לחצו כאן">
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="wrap-img">
+			<img src="img/logo-form-section.png" alt="logo-contact-form">
+		</div>
+	</div>
+</div>
+<div class="third-section">
+	<div class="main-holder">
+		<div class="regular-text-section">
+			<p>מלונות יוקרה, נופים קסומים ושלווה אינסופית - אלה רק מקצת הדברים שטיול משפחתי בתאילנד יכול להציע לכם.</p>
+			<p>למרכז למטייל בתאילנד, ניסיון של מעל עשור בהתאמה אישית של טיולי משפחות, במחירים אטרקטיביים במיוחד</p>
+			<p>ובמגוון רחב של יעדים, אטרקציות ובתי מלון.</p>
+		</div>
+		<div class="bold-text-section">
+			<p>בקיצור, אל תחשבו פעמיים, השאירו פרטים ונחזור אליכם,</p>
+			<p>כדי שהטיול המשפחתי הבא שלכם בתאילנד יהיה מושלם במיוחד!</p>
+		</div>
+		<div class="button-section">
+			<a href="">למימוש ההטבה לחצו כאן</a>
+		</div>
+	</div>
+</div>
+<div class="fourth-section">
+	<div class="main-holder">
+		<ul class="items">
+			<li class="item">
+				<div class="wrap-img">
+					<img src="img/item-1.png" alt="">
+				</div>
+				<p>ליווי אישי</p>
+			</li>
+			<li class="item">
+				<div class="wrap-img">
+					<img src="img/item-2.png" alt="">
+				</div>
+				<p>מענה  24/7 בעברית!</p>
+			</li>
+			<li class="item">
+				<div class="wrap-img">
+					<img src="img/item-3.png" alt="">
+				</div>
+				<p>ניסיון עשיר</p>
+			</li>
+			<li class="item">
+				<div class="wrap-img">
+					<img src="img/item-4.png" alt="">
+				</div>
+				<p>מחירים אטרקטיביים</p>
+			</li>
+		</ul>
+	</div>
+</div>
+<footer>
+	<div class="main-holder">
+		<p class="bold-text-section">*בהתאם לתנאי המבצע</p>
+		<p class="regular-text-section">הפייסבוק שלנו</p>
+		<p class="bold-text-section">המרכז למטייל תאילנד, <a href="tel:8888">8888*</a></p>
+	</div>
+</footer>
 
 	<script src="js/scripts.min.js"></script>
 
