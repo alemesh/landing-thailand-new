@@ -88,9 +88,16 @@ header
 	position: relative
 	background-size: cover
 	//background-repeat: no-repeat
-	background-position: left
+	background-position: 50% 100%
 	width: 100%
-	min-height: 879px
+	//min-height: 879px
+	min-height: 820px
+	.header
+		overflow: paged-x
+		max-width: 1300px
+		margin: 0 auto
+		padding: 0 30px
+		position: relative
 	.background-holder
 		//direction: rtl
 		background-image: url(../img/background-holder-header.png)
@@ -101,8 +108,41 @@ header
 		justify-content: center
 		align-items: center
 		margin-bottom: 150px
+
+	.label
+		z-index: 50
+		position: absolute
+		padding: 15px 15px
+		left: -40px
+		bottom: 42%
+		color: #00003c
+		text-transform: uppercase
+		font-size: 10px
+		//-webkit-transform: rotate(-90deg)
+		//-ms-transform: rotate(-90deg)
+		transform: rotate(-90deg)
+		&:after
+			content: ''
+			position: absolute
+			right: 109px
+			top: 48%
+			//-webkit-transform: translateY(-50%)
+			//-ms-transform: translateY(-50%)
+			transform: translateY(-50%)
+			width: 5px
+			height: 5px
+			background: #00003c
+			//-webkit-border-radius: 50%
+			border-radius: 50%
+		a
+			text-decoration: none
+			color: #00003c
+
+	.mobile-visible
+		display: none
 	.logo
-		margin-right: -200px
+		position: absolute
+		top: -218px
 	.header-text
 		display: flex
 		justify-content: right
@@ -119,7 +159,7 @@ header
 			line-height: 1
 
 	.items-section
-		margin-top: 90px
+		margin-top: 45px
 		padding: 0 30px
 	.items
 		display: flex
@@ -127,6 +167,7 @@ header
 		align-items: center
 		margin: 0 -30px
 	.item
+		direction: rtl
 		list-style: none
 		width: 20%
 		padding: 0 30px
@@ -139,7 +180,9 @@ header
 			justify-content: center
 			align-items: center
 			height: 180px
-			width: 80%
+			//width: 80%
+			width: 170px
+			//position: relative
 		img
 			//height: 100%
 		.description
@@ -154,6 +197,11 @@ header
 			flex-direction: column
 			text-decoration: none
 			color: white
+			transition: all .5s ease
+			&:hover
+				background-color: #07dcf8
+				text-decoration: none
+				//box-shadow: 1.414px 1.414px 50px 0px #07dcf8
 			span
 				line-height: 1
 				display: block
@@ -318,6 +366,11 @@ header
 			background: #00bac6
 			padding: 10px 15px
 			border-radius: 25px
+			transition: all .5s ease
+			&:hover
+				background-color: #07dcf8
+				text-decoration: none
+				box-shadow: 1.414px 1.414px 50px 0px #07dcf8
 
 
 .fourth-section
@@ -353,6 +406,12 @@ header
 			background: white
 			border-radius: 50%
 			margin-bottom: 20px
+			transition: all .5s ease
+			&:hover
+				transform: scale(.9)
+				//background-color: #fe7b84
+				text-decoration: none
+				color: #111
 		p
 			font-family: "FbSpoiler-Bold"
 			font-size: 24px
@@ -379,10 +438,86 @@ footer
 		&:hover
 			text-decoration: none
 			color: white
+		&:visited
+			text-decoration: none
+			color: white
 
 
 
+//=============== slider ====================
 
+.slick-slider
+	direction: ltr
+	position: relative
+	display: block
+	box-sizing: border-box
+	-webkit-touch-callout: none
+	-webkit-user-select: none
+	-khtml-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	-ms-touch-action: pan-y
+	touch-action: pan-y
+	-webkit-tap-highlight-color: transparent
+
+	.slick-list
+		position: relative
+		overflow: hidden
+		display: block
+		margin: 0
+		padding: 0
+		width: 100%
+		transform: translate3d(0, 0, 0)
+		&:focus
+			outline: none
+		&.dragging
+			cursor: pointer
+			cursor: hand
+
+	.slick-track
+		position: relative
+		left: 0
+		top: 0
+		display: block
+		transform: translate3d(0, 0, 0)
+
+		&:before,
+		&:after
+			content: ""
+			display: table
+
+		&:after
+			clear: both
+
+	.slick-slide
+		float: left
+		height: 100%
+		min-height: 200px
+
+	.slick-arrow
+		position: absolute
+		border: none
+		outline: none
+		top: 50%
+		width: 25px
+		height: 25px
+		border-left: 5px solid #00b3cb
+		border-top: 5px solid #00b3cb
+		z-index: 99999
+
+	.slick-next
+		right: 20px
+		transform: translateY(-50%) rotate(135deg)
+	.slick-prev
+		left: 20px
+		transform: translateY(-50%) rotate(-45deg)
+
+	.slick-arrow.slick-hidden
+		display: none
+
+	.slick-next:before, .slick-prev:before
+		content: none
 
 
 

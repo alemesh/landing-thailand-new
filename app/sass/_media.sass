@@ -2,29 +2,274 @@
 
 /*==========  Desktop First  ==========*/
 
+@media only screen and (max-width : 1400px)
+    header
+      min-height: 680px
+      .items-section
+        margin-top: 75px
+        //margin-bottom: 15px
+      .item
+        .description
+          min-height: 50px
+          .fb-spoiler
+            font-size: 20px
+          .open-sans
+            font-size: 15px
+        .wrap-img
+          //width: 60%
+          width: 130px
+          height: 130px
+          .custom-width
+            width: 65%
+      .header-text
+        h1
+          font-size: 65px
+          margin-bottom: 12px
+          line-height: .8
+        p
+          font-size: 40px
+      .background-holder
+        margin-bottom: 95px
+      .logo
+        top: -163px
+
+
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+    header
+      .items
+        margin: 0 -20px
+      .item
+        padding: 0 20px
+        .description
+          .fb-spoiler
+            font-size: 17px
+          .open-sans
+            font-size: 14px
+      .header-text
+        h1
+          font-size: 60px
+        p
+          font-size: 37px
+      .items-section
+        margin-top: 85px
+
+    .form-hold
+      h3
+        font-size: 21px
+      .btn
+        font-size: 20px
+      .wrap-btn
+        &:after
+          top: 53%
+          width: 10px
+          height: 10px
+      .form-control
+        font-size: 22px
+
+    .third-section
+      .regular-text-section
+        padding-top: 55px
+        font-size: 24px
+      .bold-text-section
+        margin-top: 35px
+        font-size: 32px
+      .button-section
+        margin-top: 40px
+        padding-bottom: 50px
+        font-size: 27px
+    .fourth-section
+      .main-holder
+        max-width: 800px
+      .items
+        margin: 0 -20px
+      .item
+        padding: 0 20px
+        .wrap-img
+          width: 100px
+          height: 100px
+        p
+          font-size: 22px
+
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+    header
+      .item
+        .description
+          width: 200px
+      .header-text
+        .title-section
+          width: 100%
+      //.mobile-visible
+      //  display: flex
+      //  align-items: center
+      //  justify-content: center
+      //  position: absolute
+      //  top: -165px
+      //  left: 30px
+      //  width: 150px
+
+    .form-hold
+      border-radius: 0
+      .form-row-wrap
+        justify-content: center
+      .form-row
+        width: 70%
+        margin-bottom: 15px
+      .form-control
+        height: 45px
+        font-size: 18px
+        //border-radius: 0
+      .btn
+        height: 45px
+        font-size: 18px
+      h3
+        margin: 0 0 15px
+        font-size: 23px
+      .wrap-btn
+        &:after
+          content: none
+    .form-section
+      .mobile-hidden
+        display: none
+
+
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+    header
+      .header-text
+        .title-section
+          text-align: center
+      .logo
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 150px
+        top: -156px
+    .form-hold
+      .form-row
+        width: 100%
 
+    .third-section
+      .regular-text-section
+        font-size: 22px
+        padding-top: 30px
+      .bold-text-section
+        font-size: 28px
+        margin-top: 25px
+      .button-section
+        margin-top: 30px
+        padding-bottom: 40px
+        font-size: 25px
+
+    .fourth-section
+      padding: 20px 0
+      .main-holder
+        max-width: 400px
+      .item
+        width: 50%
+        margin-bottom: 20px
+      .mobili-br
+        display: block
+      p
+        text-align: center
+      .order-1
+        order: 4
+      .order-2
+        order: 2
+      .order-3
+        order: 3
+      .order-4
+        order: 1
+
+    footer
+      text-align: center
+
+@media only screen and (max-width : 680px)
+    header
+      .mobile-visible
+        display: flex
+        align-items: center
+        justify-content: center
+        position: absolute
+        top: -165px
+        left: 30px
+        width: 150px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+    header
+      background-image: url(../img/background-mobile-2.png) !important
+      min-height: 600px
+      .items-section
+        margin-top: 130px
+      .header-text
+        h1
+          font-size: 43px
+        p
+          font-size: 26px
+      .background-holder
+        margin-bottom: 20px
+      .logo
+        top: -80px
+        right: 10px
+      .mobile-visible
+        top: -90px
+    .form-hold
+      padding: 15px 0
+      .mobili-br
+        display: block
+
+    .main-holder
+      padding: 0 30px
+    .third-section
+      .regular-text-section
+        font-size: 22px
+      .bold-text-section
+        font-size: 30px
+        .mobili-br
+          display: block
+      .button-section
+        a
+          width: 100%
+          display: block
+          padding: 5px
+
+    .fourth-section
+      .item
+        p
+          //font-size: 19px
 
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
-	/**/
+    header
+      .logo
+        width: 130px
+      .mobile-visible
+        width: 130px
+      .header-text
+        h1
+          font-size: 38px
+        p
+          font-size: 23px
+    .form-hold
+      h3
+        font-size: 19px
+    .third-section
+      .regular-text-section
+        font-size: 17px
+      .bold-text-section
+        font-size: 25px
+    .fourth-section
+      .item
+        p
+          font-size: 16px
 
 
 /*==========  Mobile First  ==========*/
