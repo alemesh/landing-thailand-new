@@ -90,8 +90,7 @@ header
 	//background-repeat: no-repeat
 	background-position: 50% 100%
 	width: 100%
-	//min-height: 879px
-	min-height: 820px
+	min-height: 792px
 	.header
 		overflow: paged-x
 		max-width: 1300px
@@ -107,7 +106,7 @@ header
 		display: flex
 		justify-content: center
 		align-items: center
-		margin-bottom: 150px
+		margin-bottom: 80px
 
 	.label
 		z-index: 50
@@ -142,7 +141,8 @@ header
 		display: none
 	.logo
 		position: absolute
-		top: -218px
+		top: -158px
+		right: 50px
 	.header-text
 		display: flex
 		justify-content: right
@@ -151,16 +151,29 @@ header
 			font-family: "FbSpoiler-Bold"
 			color: #00003c
 		h1
-			font-size: 75px
+			display: inline-block
+			font-size: 83px
 			line-height: .9
 			margin-bottom: 20px
+			background: #12235d
+			color: white
+			padding: 0 20px
 		p
-			font-size: 46px
+			display: inline-block
+			font-size: 51px
 			line-height: 1
+			background: white
+			font-family: "FbSpoiler-Light"
+			padding: 0 15px
 
 	.items-section
-		margin-top: 45px
+		//margin-top: 45px
+		//padding: 0 30px
+		overflow: paged-x
+		max-width: 1300px
+		margin: 0 auto
 		padding: 0 30px
+		margin-top: 110px
 	.items
 		display: flex
 		justify-content: center
@@ -179,17 +192,28 @@ header
 			display: flex
 			justify-content: center
 			align-items: center
-			height: 180px
+			height: 130px
 			//width: 80%
 			width: 170px
+			position: relative
 			//position: relative
+		.order-1
+			width: 140px
+		.order-2
+			width: 110px
+		.order-3
+			width: 140px
+		.order-4
+			width: 130px
+		.order-5
+			width: 90px
 		img
-			//height: 100%
+			//height: 150px
 		.description
 			background: #00bac6
 			text-align: center
 			width: 100%
-			min-height: 70px
+			min-height: 50px
 			border-radius: 45px
 			display: flex
 			justify-content: center
@@ -206,16 +230,18 @@ header
 				line-height: 1
 				display: block
 			.open-sans
-				font-family: "OpenSans-Bold"
-				font-size: 20px
+				font-family: "OpenSans-Regular"
+				font-size: 16px
 			.fb-spoiler
 				font-family: "FbSpoiler-Bold"
-				font-size: 25px
+				font-size: 20px
 
 
 .form-section
-	background: #00003c
+	background: white
 	min-height: 155px
+	display: flex
+	justify-content: center
 	//h3
 	//	direction: rtl
 	//	text-align: center
@@ -226,16 +252,20 @@ header
 	//	color: white
 	//	font-weight: bold
 	//	line-height: 1.4
+	.wrap-form-section
+		max-width: 1300px
+		padding: 0 30px
 	.main-holder
 		display: flex
 		justify-content: center
 		align-items: center
+		background: #00003c
 
 .form-hold
 	z-index: 2222222
 	//background: #f8be20
-	padding: 15px
-	min-height: 130px
+	padding: 15px 50px 15px 15px
+	min-height: 170px
 	width: 100%
 	position: relative
 	//border-radius: 25px 25px 25px 0
@@ -257,7 +287,7 @@ header
 
 	.form
 		direction: rtl
-		max-width: 930px
+		//max-width: 930px
 		margin: 0 auto
 		position: relative
 		transition: opacity 0.2s ease-in-out
@@ -338,7 +368,7 @@ header
 .third-section
 	background: white
 	.regular-text-section
-		padding-top: 110px
+		padding-top: 50px
 		direction: rtl
 		text-align: center
 		font-family: "FbSpoiler-Regular"
@@ -359,7 +389,7 @@ header
 		text-align: center
 		font-family: "FbSpoiler-Bold"
 		font-size: 30px
-		padding-bottom: 100px
+		padding-bottom: 80px
 		a
 			text-decoration: none
 			color: white

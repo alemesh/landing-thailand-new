@@ -30,7 +30,7 @@
 
 <body>
 
-<header style="background-image: url(img/background-header.png)">
+<header style="background-image: url(img/background-header-2.png)">
 	<div class="background-holder"></div>
 	<span class="label"><a href="http://www.gofmans.co.il/" target="_blank">Gofman creative</a></span>
 	<div class="header">
@@ -54,7 +54,7 @@
 	<div class="items-section">
 		<ul class="items slick-slider">
 			<li class="item">
-				<div class="wrap-img">
+				<div class="wrap-img order-1">
 					<img src="img/logo-item-3.png" alt="logo-item">
 				</div>
 				<a href="http://www.dreamworld.co.th/panoramic/" target="_blank" class="description">
@@ -63,7 +63,7 @@
 				</a>
 			</li>
 			<li class="item">
-				<div class="wrap-img">
+				<div class="wrap-img order-2">
 					<img src="img/logo-item-4.png" alt="logo-item">
 				</div>
 				<a href="https://www.siamparkcity.com/en/main.php" target="_blank" class="description">
@@ -72,7 +72,7 @@
 				</a>
 			</li>
 			<li class="item">
-				<div class="wrap-img">
+				<div class="wrap-img order-3">
 					<img src="img/logo-item-5.png" alt="logo-item">
 				</div>
 				<a href="https://www.madametussauds.com/bangkok/en/" target="_blank" class="description">
@@ -81,7 +81,7 @@
 				</a>
 			</li>
 			<li class="item">
-				<div class="wrap-img">
+				<div class="wrap-img order-4">
 					<img src="img/logo-item-1.png" alt="logo-item">
 				</div>
 				<a href="http://www.sealifebangkok.com/en/" target="_blank" class="description">
@@ -90,7 +90,7 @@
 				</a>
 			</li>
 			<li class="item">
-				<div class="wrap-img">
+				<div class="wrap-img order-5">
 					<img src="img/logo-item-2.png" class="custom-width" alt="logo-item">
 				</div>
 				<a href="https://www.lametayel-thailand.com/" target="_blank" class="description">
@@ -103,31 +103,34 @@
 </header>
 <div class="form-section" id="form-scrol">
 	<!--<h3>למימוש ההטבה ופרטים נוספים, השאירו פרטים וניצור אתכם קשר בהקדם</h3>-->
-	<div class="main-holder">
+	<div class="wrap-form-section">
+		<div class="main-holder">
 
-		<div class="form-hold">
-			<h3>למימוש ההטבה ופרטים נוספים,<span class="mobili-br"></span> השאירו פרטים וניצור אתכם קשר בהקדם</h3>
-			<form action="form_processing.php" class="form form-validation" method="post">
-				<div class="form-row-wrap">
-					<div class="form-row">
-						<input name="name" class="form-control" required data-required="true" type="text" pattern="^[A-Zא-תa-z ]{1,50}$"  placeholder="*שם מלא">
+			<div class="form-hold">
+				<h3>למימוש ההטבה ופרטים נוספים,<span class="mobili-br"></span> השאירו פרטים וניצור אתכם קשר בהקדם</h3>
+				<form action="form_processing.php" class="form form-validation" method="post">
+					<div class="form-row-wrap">
+						<div class="form-row">
+							<input name="name" class="form-control" required data-required="true" type="text" pattern="^[A-Zא-תa-z ]{1,50}$"  placeholder="*שם מלא">
+						</div>
+						<div class="form-row">
+							<input name="tel" class="form-control" required data-required="true" type="text" placeholder="*נייד" pattern="(((02)|(03)|(04)|(08)|(09)){1}[\d]{7,8})|(((071)|(072)|(073)|(074)|(076)|(077)|(078)|(079)|(050)|(051)|(052)|(053)|(054)|(055)|(056)|(058)|(059)){1}[\d]{6,7})" title="International, state or local telephone number">
+						</div>
+						<div class="form-row">
+							<input name="email" class="form-control" type="email" placeholder="מייל">
+						</div>
+						<div class="form-row wrap-btn">
+							<input type="submit" class="btn" value="למימוש ההטבה לחצו כאן">
+						</div>
 					</div>
-					<div class="form-row">
-						<input name="tel" class="form-control" required data-required="true" type="text" placeholder="*נייד" pattern="(((02)|(03)|(04)|(08)|(09)){1}[\d]{7,8})|(((071)|(072)|(073)|(074)|(076)|(077)|(078)|(079)|(050)|(051)|(052)|(053)|(054)|(055)|(056)|(058)|(059)){1}[\d]{6,7})" title="International, state or local telephone number">
-					</div>
-					<div class="form-row">
-						<input name="email" class="form-control" type="email" placeholder="מייל">
-					</div>
-					<div class="form-row wrap-btn">
-						<input type="submit" class="btn" value="למימוש ההטבה לחצו כאן">
-					</div>
-				</div>
-			</form>
-		</div>
-		<div class="wrap-img mobile-hidden">
-			<img src="img/logo-form-section.png" alt="logo-contact-form">
+				</form>
+			</div>
+			<div class="wrap-img mobile-hidden">
+				<img src="img/logo-form-section.png" alt="logo-contact-form">
+			</div>
 		</div>
 	</div>
+
 </div>
 <div class="third-section">
 	<div class="main-holder">
