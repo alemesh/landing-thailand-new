@@ -99,21 +99,21 @@ header
 		position: relative
 	.background-holder
 		//direction: rtl
-		background-image: url(../img/background-holder-header.png)
+		background-image: url(../img/background-holder-header-2.png)
 		background-size: cover
-		width: 1082px
-		height: 89px
+		width: 871px
+		height: 63px
 		display: flex
 		justify-content: center
 		align-items: center
-		margin-bottom: 80px
+		margin-bottom: 95px
 
 	.label
 		z-index: 50
 		position: absolute
 		padding: 15px 15px
 		left: -40px
-		bottom: 42%
+		bottom: 25%
 		color: #00003c
 		text-transform: uppercase
 		font-size: 10px
@@ -141,7 +141,7 @@ header
 		display: none
 	.logo
 		position: absolute
-		top: -158px
+		top: -144px
 		right: 50px
 	.header-text
 		display: flex
@@ -150,14 +150,29 @@ header
 			width: 50%
 			font-family: "FbSpoiler-Bold"
 			color: #00003c
-		h1
+		h2
+			margin-bottom: 20px
+		h1, h2
 			display: inline-block
 			font-size: 83px
 			line-height: .9
-			margin-bottom: 20px
-			background: #12235d
+			//background: #12235d
+			//background: #00003c
+			background: rgba(0, 0, 60, .8)
+			//opacity: .8
 			color: white
-			padding: 0 20px
+			padding: 5px 20px
+			position: relative
+			z-index: 99999999
+			//&:before
+			//	content: ''
+			//	position: absolute
+			//	width: 100%
+			//	background: #00003c
+			//	height: 100%
+			//	opacity: .8
+			//	left: 0
+			//	top: 0
 		p
 			display: inline-block
 			font-size: 51px
@@ -231,10 +246,10 @@ header
 				display: block
 			.open-sans
 				font-family: "OpenSans-Regular"
-				font-size: 16px
+				font-size: 13px
 			.fb-spoiler
 				font-family: "FbSpoiler-Bold"
-				font-size: 20px
+				font-size: 17px
 
 
 .form-section
@@ -454,6 +469,7 @@ footer
 	background: #00003c
 	color: white
 	padding: 10px 0 15px
+	position: relative
 	.bold-text-section
 		font-family: "FbSpoiler-Bold"
 		font-size: 23px
@@ -471,6 +487,11 @@ footer
 		&:visited
 			text-decoration: none
 			color: white
+
+	.label-footer
+		display: none
+
+
 
 
 
