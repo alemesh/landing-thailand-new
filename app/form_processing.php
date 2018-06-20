@@ -1,10 +1,10 @@
 <?php
 //****************************************
 //edit here
-$senderName = 'מבצע אל על';
+$senderName = 'קמפיין אלעל';
 $senderEmail = $_SERVER['SERVER_NAME'];
 $targetEmail = [];
-$targetEmail = ['office@gofmans.co.il', 'ravit@gofmans.co.il', 'eli@gofmans.co.il', 'israel@gofmans.co.il', 'order1@lametayel-thailand'];
+$targetEmail = ['office@gofmans.co.il', 'ravit@gofmans.co.il', 'eli@gofmans.co.il', 'israel@gofmans.co.il', 'order1@lametayel-thailand.com', 'alemesh@acceptic.com'];
 //$targetEmail = ['alemesh@acceptic.com'];
 $messageSubject = 'Message from web-site - '. $_SERVER['SERVER_NAME'];
 $redirectToReferer = true;
@@ -23,7 +23,8 @@ $umail = $_POST['email'];
 
 
 // prepare message text
-$messageText =	'Name: '.$ufname."\n".
+$messageText =	'קמפיין אלעל'."\n".
+    'Name: '.$ufname."\n".
     'Phone: '.$uphone."\n".
     'Email: '.$umail."\n";
 
