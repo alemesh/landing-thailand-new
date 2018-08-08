@@ -25,11 +25,11 @@
         h2
           margin-bottom: 12px
         h1, h2
-          font-size: 60px
-          line-height: .9
+          //font-size: 60px
+          //line-height: .9
         p
-          font-size: 37px
-          line-height: 1.2
+          //font-size: 37px
+          //line-height: 1.2
       .background-holder
         margin-bottom: 50px
       .logo
@@ -50,10 +50,12 @@
           .open-sans
             font-size: 14px
       .header-text
+        .title-section
+          width: 490px
         h1
-          font-size: 60px
+          //font-size: 60px
         p
-          font-size: 37px
+          //font-size: 37px
       .items-section
         margin-top: 85px
 
@@ -99,15 +101,19 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
     header
+      background-image: url(../img/background-header-4.png) !important
+      .logo
+        top: -147px
       .background-holder
         width: 100%
         background: #00003c
+        margin-bottom: 90px
       .mobile-visible
         display: flex
         align-items: center
         justify-content: center
         position: absolute
-        top: -106px
+        top: -157px
         left: 30px
         width: 150px
       .item
@@ -201,7 +207,7 @@
         justify-content: center
         align-items: center
         width: 150px
-        top: -98px
+        top: -147px
     .form-hold
       .form-row
         width: 100%
@@ -245,10 +251,10 @@
     header
       .header-text
         h1, h2
-          font-size: 52px
-          line-height: 1
+          font-size: 45px
+          //line-height: 1
         p
-          font-size: 32px
+          font-size: 24px
       //.mobile-visible
       //  display: flex
       //  align-items: center
@@ -267,22 +273,24 @@
         margin-top: 130px
       .header-text
         h1, h2
-          font-size: 41px
+          font-size: 35px
           //background: transparent
           //color: #00003c
           padding: 0 20px
         p
           //background: transparent
           font-family: "FbSpoiler-Bold"
-          font-size: 26px
+          font-size: 18px
           line-height: 1.3
       .background-holder
         margin-bottom: 20px
       .logo
-        top: -68px
+        top: -77px
         right: 10px
       .mobile-visible
-        top: -76px
+        top: -86px
+      .background-flight
+        display: none
     .form-hold
       padding: 15px 0
       .mobili-br
@@ -312,6 +320,7 @@
           //font-size: 19px
 
 
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
     header
@@ -321,9 +330,11 @@
         width: 130px
       .header-text
         h1
-          font-size: 32px
+          font-size: 30px
+        h2
+          font-size: 28px
         p
-          font-size: 20px
+          font-size: 14px
     .form-hold
       h3
         font-size: 19px

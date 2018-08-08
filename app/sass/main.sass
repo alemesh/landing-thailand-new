@@ -90,30 +90,42 @@ header
 	//background-repeat: no-repeat
 	background-position: 50% 100%
 	width: 100%
-	min-height: 792px
+	//min-height: 792px
+	min-height: 669px
 	.header
 		overflow: paged-x
 		max-width: 1300px
 		margin: 0 auto
 		padding: 0 30px
 		position: relative
+	.wrap-background-holder
+		display: flex
+		justify-content: flex-end
 	.background-holder
 		//direction: rtl
-		background-image: url(../img/background-holder-header-2.png)
+		background-image: url(../img/background-holder-header-3.png)
 		background-size: cover
-		width: 871px
-		height: 63px
-		display: flex
-		justify-content: center
-		align-items: center
-		margin-bottom: 95px
-
+		width: 772px
+		height: 85px
+		//display: flex
+		//justify-content: center
+		//align-items: center
+		margin-bottom: 55px
+	.background-flight
+		position: absolute
+		background-image: url(../img/flieght.png)
+		background-size: cover
+		width: 677px
+		height: 147px
+		top: 95px
+		left: 50%
+		transform: translateX(-50%)
 	.label
 		z-index: 50
 		position: absolute
 		padding: 15px 15px
 		left: -40px
-		top: 14%
+		top: 20%
 		color: #00003c
 		text-transform: uppercase
 		font-size: 10px
@@ -148,38 +160,33 @@ header
 		justify-content: right
 		.title-section
 			width: 50%
-			font-family: "FbSpoiler-Bold"
+			font-family: "FbSpoiler-Regular"
 			color: #00003c
 		h2
-			margin-bottom: 20px
+			margin-bottom: 15px
 		h1, h2
 			display: inline-block
-			font-size: 83px
-			line-height: .9
-			//background: #12235d
-			//background: #00003c
-			background: rgba(0, 0, 60, .8)
-			//opacity: .8
-			color: white
+			font-size: 53.15px
+			line-height: .6
+			color: rgb(0, 0, 60)
 			padding: 5px 20px
 			position: relative
 			z-index: 99999999
-			//&:before
-			//	content: ''
-			//	position: absolute
-			//	width: 100%
-			//	background: #00003c
-			//	height: 100%
-			//	opacity: .8
-			//	left: 0
-			//	top: 0
+
 		p
 			display: inline-block
-			font-size: 51px
+			font-size: 31px
 			line-height: 1
-			background: white
-			font-family: "FbSpoiler-Light"
 			padding: 0 15px
+		a
+			color: #00003c
+			text-decoration: none
+			font-family: "FbSpoiler-Bold"
+			border-bottom: 1px solid #00003c
+			transition: .3s
+			&:hover
+				border-bottom: none
+
 
 	.items-section
 		//margin-top: 45px
@@ -382,6 +389,7 @@ header
 
 .third-section
 	background: white
+	margin-bottom: 60px
 	.regular-text-section
 		padding-top: 50px
 		direction: rtl
