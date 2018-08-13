@@ -32,7 +32,7 @@ $messageText =	'קמפיין אלעל'."\n".
 // send email
 $senderName = "=?UTF-8?B?" . base64_encode($senderName) . "?=";
 $messageSubject = "=?UTF-8?B?" . base64_encode($messageSubject) . "?=";
-$messageHeaders = "From: " . $senderName . " <" . $senderEmail . ">\r\n"
+$messageHeaders = "From: " . $senderName . " <" . $umail . ">\r\n"
     . "MIME-Version: 1.0" . "\r\n"
     . "Content-type: text/plain; charset=UTF-8" . "\r\n";
 
