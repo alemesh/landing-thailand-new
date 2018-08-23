@@ -2,6 +2,18 @@
 
 /*==========  Desktop First  ==========*/
 
+
+
+
+
+@media only screen and (max-width : 1600px)
+    header
+      .background-holder
+        justify-content: flex-end
+        padding-left: 100px
+
+
+
 @media only screen and (max-width : 1400px)
     header
       min-height: 635px
@@ -49,6 +61,8 @@
             font-size: 17px
           .open-sans
             font-size: 14px
+      .background-holder
+        padding-left: 50px
       .header-text
         .title-section
           width: 490px
@@ -102,24 +116,38 @@
 @media only screen and (max-width : 992px)
     header
       background-image: url(../img/background-header-4.png) !important
+      .background-holder-flights
+        display: none
       .logo
         top: -147px
+      .wrap-background-holder
+        flex-direction: column
+        h3
+          order: 2
+          z-index: 3
+          padding-right: 50px
+          margin-left: auto
+          margin-bottom: 25px
       .background-holder
+        height: 90px
         width: 100%
         background: #00003c
-        margin-bottom: 90px
+        margin-bottom: 0
+        justify-content: flex-start
+        padding-right: 50px
       .mobile-visible
         display: flex
         align-items: center
         justify-content: center
         position: absolute
-        top: -157px
+        top: -214px
         left: 30px
         width: 150px
       .item
         .description
           width: 200px
       .header-text
+        margin-top: 90px
         .title-section
           width: 70%
       //.mobile-visible
@@ -208,6 +236,11 @@
         align-items: center
         width: 150px
         top: -147px
+      .wrap-background-holder
+        h3
+          text-align: center
+          max-width: 500px
+          padding: 0
     .form-hold
       .form-row
         width: 100%
@@ -272,11 +305,13 @@
       .items-section
         margin-top: 130px
       .header-text
+        margin-top: 0
         h1, h2
           font-size: 35px
           //background: transparent
           //color: #00003c
           padding: 0 20px
+
         p
           //background: transparent
           font-family: "FbSpoiler-Bold"
@@ -284,14 +319,19 @@
           line-height: 1.2
           display: block
       .background-holder
-        margin-bottom: 20px
+        //margin-bottom: 20px
+        padding-right: 25px
       .logo
         top: -77px
         right: 10px
       .mobile-visible
-        top: -86px
+        top: -118px
       .background-flight
         display: none
+      .wrap-background-holder
+        background: none
+        h3
+          font-size: 12px
     .form-hold
       padding: 15px 0
       .mobili-br
@@ -313,7 +353,7 @@
           padding: 5px
     .form-hold
       h3
-        font-size: 21px
+        font-size: 18px
 
     .fourth-section
       .item
@@ -329,6 +369,7 @@
         width: 130px
       .mobile-visible
         width: 130px
+        top: -125px
       .header-text
         h1
           font-size: 30px
@@ -336,6 +377,10 @@
           font-size: 28px
         p
           font-size: 14px
+      .background-holder
+        padding-right: 15px
+        a
+          width: 120px
     .form-hold
       h3
         font-size: 19px

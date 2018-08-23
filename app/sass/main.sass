@@ -92,6 +92,15 @@ header
 	width: 100%
 	//min-height: 792px
 	min-height: 669px
+	.background-holder-flights
+		background-image: url(../img/flieght.png)
+		background-size: cover
+		position: absolute
+		top: 95px
+		left: 45%
+		transform: translateX(-50%)
+		width: 688px
+		height: 157px
 	.header
 		overflow: paged-x
 		max-width: 1300px
@@ -101,16 +110,33 @@ header
 	.wrap-background-holder
 		display: flex
 		justify-content: flex-end
+		background: linear-gradient(to top,transparent ,rgba(255, 255, 255, .8) 45%)
+		//margin-bottom: 55px
+		h3
+			font-family: "FbSpoiler-Regular"
+			font-size: 17px
+			line-height: .6
+			color: rgb(0, 0, 60)
+			line-height: 1
+			margin-top: 10px
+			padding-right: 20px
+			margin-left: 20px
 	.background-holder
 		//direction: rtl
-		background-image: url(../img/background-holder-header-3.png)
+		//background-image: url(../img/background-holder-header-3.png)
+		background-image: url(../img/strip.png)
 		background-size: cover
+		background-position: right
 		width: 772px
 		height: 85px
-		//display: flex
-		//justify-content: center
-		//align-items: center
+		display: flex
+		justify-content: center
+		align-items: center
 		margin-bottom: 55px
+		a
+			width: 150px
+			display: block
+
 	.background-flight
 		position: absolute
 		background-image: url(../img/flieght.png)
@@ -302,7 +328,8 @@ header
 		text-align: center
 		font-family: "FbSpoiler-Bold"
 		font-size: 24px
-		margin: 0 0 25px 185px
+		//margin: 0 0 25px 185px
+		margin: 0 0 25px 153px
 		color: white
 		font-weight: bold
 		line-height: 1.4
